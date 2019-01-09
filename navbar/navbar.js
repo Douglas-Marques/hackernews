@@ -1,5 +1,5 @@
 function NavbarController() {
-
+    
 }
 
 angular.module('HackerNews').component('navbar', {
