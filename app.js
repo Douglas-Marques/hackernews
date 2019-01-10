@@ -1,4 +1,4 @@
-var app = angular.module("HackerNews", []);
+var app = angular.module("HackerNews", ['ngAnimate']);
 app.controller("NewsController", ['$scope', function($scope){
 
 }])

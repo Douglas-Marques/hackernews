@@ -1,0 +1,163 @@
+a { 
+  color: inherit;
+  text-decoration: none;
+} 
+
+.carousel{
+    margin-top: 30px;
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: slider 15000ms ease-in-out forwards infinite;
+}
+
+.slider {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url('https://www.laphamsquarterly.org/sites/default/files/styles/thumbnail/public/images/essay/voltaireessay2.jpg?itok=h3EQaRli');
+    background-size: cover;
+    background-position: center;
+}
+  
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    55% {
+      transform: translateX(-100%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    80% {
+      transform: translatex(-200%);
+    }
+  }
+
+.carousel-title{
+    position: inherit;
+    color: white;
+    bottom: 40px;
+    left: 10px;
+    max-width: 45%;
+    font-size: 2.0rem
+}
+
+.carousel-title:after {
+    display: block;
+    height: 2px;
+    background-color: #ccc;
+    content: '';
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.carousel-text{
+    position: inherit;
+    color: rgb(158, 158, 158);
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Loading */
+
+.loading,
+.loading::before,
+.loading::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left-color: rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
+}
+
+.loading {
+  margin: -25px 0 0 -25px;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: animation-rotate 1000ms linear infinite;
+  -moz-animation: animation-rotate 1000ms linear infinite;
+  -o-animation: animation-rotate 1000ms linear infinite;
+  animation: animation-rotate 1000ms linear infinite;
+  z-index: 1;
+  
+}
+
+.loading::before {
+  content: "";
+  margin: -23px 0 0 -23px;
+  height: 44px;
+  width: 44px;
+  -webkit-animation: animation-rotate 1000ms linear infinite;
+  -moz-animation: animation-rotate 1000ms linear infinite;
+  -o-animation: animation-rotate 1000ms linear infinite;
+  animation: animation-rotate 1000ms linear infinite;
+}
+
+.loading::after {
+  content: "";
+  margin: -29px 0 0 -29px;
+  height: 56px;
+  width: 56px;
+  -webkit-animation: animation-rotate 2000ms linear infinite;
+  -moz-animation: animation-rotate 2000ms linear infinite;
+  -o-animation: animation-rotate 2000ms linear infinite;
+  animation: animation-rotate 2000ms linear infinite;
+}
+
+@-webkit-keyframes animation-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes animation-rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes animation-rotate {
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes animation-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animação */
+  
+  .animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+    display:block!important;
+  }
+  
+  .animate-show.ng-hide-add, .animate-show.ng-hide-remove {
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
+  }
+  
+  .animate-show.ng-hide {
+    line-height:0;
+    opacity:0;
+    padding:0 10px;
+  }

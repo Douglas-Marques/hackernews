@@ -2,22 +2,32 @@
 <html>
 <head>
   <title>Hacker News</title>
+
   <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
 
   <!-- Controllers -->
   <script src="app.js"></script>
   <script src="navbar/navbar.js"></script>
+  <script src="carousel/carousel.js"></script>
+  <script src="logo/logo.js"></script>
 
   <!-- Styles -->
   <link href="navbar/navbar.css" rel="stylesheet" type="text/css"/>
+  <link href="carousel/carousel.css" rel="stylesheet" type="text/css"/>
+  <link href="index.css" rel="stylesheet" type="text/css"/>
+  <link href="logo/logo.css" rel="stylesheet" type="text/css"/>
   
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  
 </head>
 <body ng-app="HackerNews" ng-controller="NewsController">
-    <div>
-        <navbar></navbar>
+    <div class='grid-container'>
+        <navbar class='navbar'></navbar>
+        <logo></logo>
+        <carousel></carousel>
     </div>
 </body>
 </html>

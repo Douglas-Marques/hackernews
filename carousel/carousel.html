@@ -1,0 +1,11 @@
+<div class="carousel">
+    <div ng-show="$ctrl.loading" class="animate-show loading"></div>
+    <div ng-hide="$ctrl.loading" class="animate-show">
+    <div ng-repeat="i in [0, 1, 2]">
+        <div style="left:{{i}}00% ; background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7)), url('{{$ctrl.noticias[i].img}}') " class="carousel-img slider">
+          <h1 class="carousel-title"><a ng-href="{{$ctrl.noticias[i].url}}" target="_blank"> {{$ctrl.noticias[i].title}}</a></h1>
+          <p class="carousel-text">{{$ctrl.noticias[i].author}}</p>
+        </div>
+    </div>
+    </div>
+</div>

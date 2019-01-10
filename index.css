@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'navbar'
+      'logo'
+      'carousel';
+}
+
+body{
+    background: #F3F5F4
+}
